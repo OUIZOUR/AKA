@@ -3,16 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PageToDoComponent } from './module/todo/page-to-do/page-to-do.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { DetailsTodoListeComponent } from './module/todo/composant/details-todo-liste/details-todo-liste.component';
+import { DisplayTodoPipe } from './module/todo/pipe/display-todo.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageToDoComponent
+    DetailsTodoListeComponent,
+    DisplayTodoPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
