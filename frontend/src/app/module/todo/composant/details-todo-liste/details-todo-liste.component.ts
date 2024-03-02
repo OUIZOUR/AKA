@@ -19,13 +19,5 @@ export class DetailsTodoListeComponent implements OnInit {
     })
   }
 
-  // todo1: TodoDto = {
-  //   id:1,
-  //   title: 'menage',
-  //   description: 'je dois faire le menage',
-  //   creationDate: new Date(),
-  //   deadline: new Date('2024-03-03')
-  // }
-
 
 }

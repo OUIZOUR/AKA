@@ -22,7 +22,7 @@ public class ToDoController {
 
     @GetMapping("/todolist")
     public ResponseEntity<List<ToDoDto>> getToDoList () {
-        return new ResponseEntity<>(toDoService.findAllToDo(), HttpStatus.FOUND);
+        return new ResponseEntity<>(toDoService.findAllToDo(), HttpStatus.ACCEPTED);
     }
 
     @GetMapping("/todo/{id}")

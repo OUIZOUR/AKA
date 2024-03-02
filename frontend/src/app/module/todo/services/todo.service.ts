@@ -14,6 +14,6 @@ export class TodoService {
 
   getTodoListe(): Observable<TodoDto[]>{
 
-    return this.http.get<TodoDto[]>('http://localhost:8080/api/todo');
+    return this.http.get<TodoDto[]>('http://localhost:8080/api/todolist');
   }
 }
